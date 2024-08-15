@@ -81,7 +81,6 @@ nav ul li:first-child{
     width: 550px;
     height: 90vh; 
     padding: 0 8%; 
-    
 }
 .homee:hover {
     background-color:linear-gradient(rgba(43, 43, 43, 0.932),rgba(70, 7, 7, 0.863));
@@ -165,6 +164,43 @@ h3{
     color: rgb(64, 16, 78);
     background-color: #747272f0;
 }
+.home-icons{
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-icons a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #6f26a0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #6f26a0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+.home-icons a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background: #747272f0;
+    z-index: -1;
+    transition: .5s;
+}
+.home-icons a:hover::before{
+    width: 100%;
+}
 
 @media(max-width: 800px) {
     .hide{
@@ -184,4 +220,9 @@ h3{
         padding: 0px 0px;
     }
     
+}
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
 }
