@@ -1,54 +1,89 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fibel's CV</title>
-        <link rel="stylesheet" href="css/fontawesome-free-6.6.0-web/css/all.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibel's CV</title>
+    <link rel="stylesheet" href="css/fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fluent-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="home-page">
+    <div class="cloud-bg" aria-hidden="true">
+        <svg class="cloud c1" viewBox="0 0 200 60"><ellipse cx="60" cy="30" rx="60" ry="30"/><ellipse cx="140" cy="30" rx="40" ry="20"/></svg>
+        <svg class="cloud c2" viewBox="0 0 120 40"><ellipse cx="40" cy="20" rx="40" ry="20"/><ellipse cx="90" cy="20" rx="30" ry="15"/></svg>
+        <svg class="cloud c3" viewBox="0 0 220 70"><ellipse cx="80" cy="35" rx="80" ry="35"/><ellipse cx="170" cy="35" rx="50" ry="25"/></svg>
+        <svg class="cloud c4" viewBox="0 0 100 30"><ellipse cx="30" cy="15" rx="30" ry="15"/><ellipse cx="70" cy="15" rx="20" ry="10"/></svg>
+    </div>
 
-        <nav class="nav">
-            <ul class="sidebar">
-                <li onclick=closeSideBar()><a ><i class="fa-solid fa-xmark"></i></a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sites.html">Sites</a></li>
-                <li><a href="About.html">About me</a></li> 
-                <li class="hide"><a href="MY.html">My CV</a></li>
-            </ul>
-            <ul>
-                <li><a href="fibel">FIBEL</a></li>
-                <li class="hide"><a href="index.html">Home</a></li>
-                <li class="hide"><a href="sites.html">Sites</a></li>
-                <li class="hide"><a href="About.html">About me</a></li>
-                <li class="hide"><a href="MY.html">My CV</a></li>
-                <li class="menuB" onclick=openSideBar() ><a><i class="fa-solid fa-bars"></i></a></li> 
-            </ul>
-        </nav>
-        <section>
-            <div class="home">
-                <div class="homee">
-                <div class="home-content"> 
-                    <h1>Good Day I'm NGANG FIBEL</h1>
-                    <h3>Data scientist, Software developer and graphic designer</h3>
-                    <p>    I am an ungraduate student of the Catholic university of cameroon bamenda in the Department 
-                    Computer Science, even though i am here to make your web desires turn your reality </p>
+    <nav class="nav">
+        <ul class="sidebar">
+            <li onclick="closeSideBar()" tabindex="0" aria-label="Close sidebar" role="button">
+              <a><i class="fa-solid fa-xmark"></i></a>
+            </li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="sites.html">Sites</a></li>
+            <li><a href="About.html">About me</a></li> 
+            <li ><a href="MY.html">My CV</a></li>
+        </ul>
+        <ul>
+            <li><a href="#index.html">NGANG FIBEL</a></li>
+            <li class="hide"><a href="index.html">Home</a></li>
+            <li class="hide"><a href="sites.html">Sites</a></li>
+            <li class="hide"><a href="About.html">About me</a></li>
+            <li class="hide"><a href="MY.html">My CV</a></li>
+            <li class="menuB" onclick=openSideBar() ><a><i class="fa-solid fa-bars"></i></a></li> 
+        </ul>
+    </nav>
+    <section>
+        <div class="home">
+            <div class="homee animated-fadein glass-card">
+                <div class="profile-img-container">
+                    <img src="fibel2.jpg" alt="NGANG FIBEL" class="profile-img animated-scalein"/>
                 </div>
-                <div class="btn">
-                    <a href="">About Me</a>
-                    <a href="">Contact Me</a>
+                <div class="home-content animated-slideup"> 
+                    <h1>
+                        <span class="highlight">NGANG FIBEL</span>
+                    </h1>
+                    <h2 class="subtitle">
+                        Empowering Innovation through Data & Code
+                    </h2>
+                    <h3>
+                        Data Scientist &nbsp;|&nbsp; Software Engineer &nbsp;|&nbsp; Creative Technologist
+                    </h3>
+                    <p>
+                        Welcome! I am a passionate Computer Science undergraduate at the Catholic University of Cameroon, Bamenda.<br>
+                        I specialize in building robust, scalable, and visually compelling digital solutions. My expertise bridges the gap between data-driven insights and creative design, ensuring your ideas are transformed into impactful realities.
+                    </p>
+                    <div class="btn-group">
+                        <a href="#projects" class="btn animated-btn">Discover More</a>
+                        <a href="mailto:ngangfibel@gmail.com" class="btn btn-outline animated-btn">Let's Connect</a>
+                    </div>
                 </div>
             </div>
-            <div class="home-icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <div class="home-icons animated-fadein-delay">
+                <a href="https://instagram.com/ngang_fibs" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/NGANGFIBEL" aria-label="Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://t.me/Ngangfibs" aria-label="Telegram" target="_blank"><i class="fa-brands fa-telegram"></i></a>
             </div> 
+        </div>
+    </section>
+    <section id="projects" class="projects-section glass-card animated-fadein">
+        <h2>Featured Projects</h2>
+        <div class="projects-list">
+            <div class="project-card">
+                <h3>Project Title</h3>
+                <p>Short description of your project and technologies used.</p>
+                <a href="https://github.com/ngangfibs/portfolio.git" target="_blank">View on GitHub</a>
             </div>
-        </section>
-        
-        
-        <script src="script.js"></script>
-    </body>
-    </html>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

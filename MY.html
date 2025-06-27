@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My CV – NGANG FIBEL</title>
+    <link rel="stylesheet" href="css/fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fluent-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="cloud-bg" aria-hidden="true">
+        <svg class="cloud c1" viewBox="0 0 200 60"><ellipse cx="60" cy="30" rx="60" ry="30"/><ellipse cx="140" cy="30" rx="40" ry="20"/></svg>
+        <svg class="cloud c2" viewBox="0 0 120 40"><ellipse cx="40" cy="20" rx="40" ry="20"/><ellipse cx="90" cy="20" rx="30" ry="15"/></svg>
+        <svg class="cloud c3" viewBox="0 0 220 70"><ellipse cx="80" cy="35" rx="80" ry="35"/><ellipse cx="170" cy="35" rx="50" ry="25"/></svg>
+        <svg class="cloud c4" viewBox="0 0 100 30"><ellipse cx="30" cy="15" rx="30" ry="15"/><ellipse cx="70" cy="15" rx="20" ry="10"/></svg>
+    </div>
+    <nav class="nav">
+        <ul class="sidebar">
+            <li onclick="closeSideBar()" tabindex="0" aria-label="Close sidebar" role="button">
+              <a><i class="fa-solid fa-xmark"></i></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sites.html">Sites</a></li>
+            <li><a href="About.html">About me</a></li>
+            <li class="hide"><a href="MY.html" class="active">My CV</a></li>
+        </ul>
+        <ul>
+            <li><a href="fibel">FIBEL</a></li>
+            <li class="hide"><a href="index.html">Home</a></li>
+            <li class="hide"><a href="sites.html">Sites</a></li>
+            <li class="hide"><a href="About.html">About me</a></li>
+            <li class="hide"><a href="MY.html" class="active">My CV</a></li>
+            <li class="menuB" onclick="openSideBar()"><a><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="glass-card animated-fadein">
+            <h1 class="section-title">Curriculum Vitae</h1>
+            <ul class="cv-list">
+                <li><strong>Name:</strong> NGANG FIBEL</li>
+                <li><strong>Title:</strong> Data Scientist | Software Engineer | Creative Technologist</li>
+                <li><strong>Education:</strong> BSc Computer Science, Catholic University of Cameroon, Bamenda</li>
+                <li><strong>Skills:</strong> Python, JavaScript, SQL, Machine Learning, Web Development, Data Visualization</li>
+                <li><strong>Experience:</strong> 
+                    <ul>
+                        <li>Intern, Data Science Lab, CUC Bamenda (2024)</li>
+                        <li>Freelance Web Developer (2023–present)</li>
+                    </ul>
+                </li>
+                <li><strong>Projects:</strong> <a href="index.html#projects" style="color:#007bff;text-decoration:underline;">See featured projects</a></li>
+                <li><strong>Contact:</strong> <a href="mailto:your@email.com" style="color:#007bff;">ngangfibel@gmail.com</a></li>
+            </ul>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
