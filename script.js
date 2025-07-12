@@ -15,3 +15,11 @@ function openSideBar(){
         sideBar.classList.add('sidebar-open');
     }, 10);
 }
+
+window.addEventListener('resize', function() {
+    const sidebar = document.querySelector('.sidebar');
+    if (window.innerWidth > 800 && sidebar && sidebar.classList.contains('sidebar-open')) {
+        sidebar.classList.remove('sidebar-open');
+        sidebar.classList.add('sidebar-close');
+    }
+});

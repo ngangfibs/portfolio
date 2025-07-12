@@ -45,6 +45,7 @@ nav a:hover {
 }
 nav ul li:first-child {
     margin-right: auto;
+   
 }
 .sidebar {
     position: fixed;
@@ -258,11 +259,13 @@ body > *:not(.particle-canvas) {
     border-radius: 50%;
     background: rgba(255,255,255,0.12);
     transition: background 0.2s, color 0.2s;
+    text-decoration: none !important;
 }
 .sidebar li:first-child a:hover {
     background: #43c6ac;
     color: #fff;
     font-size: 3.5rem;
+    text-decoration: none !important;
 }
 
 /* Logo zoom-in effect in nav bar - remove hover background/shadow */
@@ -272,7 +275,7 @@ nav ul li a img {
     box-shadow: none !important;
 }
 nav ul li a:hover img {
-    transform: scale(1.13);
+    transform: scale(1.23);
     background: none !important;
     box-shadow: none !important;
 }
@@ -362,4 +365,12 @@ nav ul li a:hover img {
     color: #43c6ac;
     font-weight: bold;
     border-bottom: 2px solid #43c6ac;
+}
+.nav-logo {
+    height: 60px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 0;
+    border-radius: 0;
+    display: inline-block;
 }
