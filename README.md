@@ -1,6 +1,6 @@
 <h1 align="center">
   <img src="assets/wave.gif" width="40px"/>
-  Hey there! I'm <span style="color:#ff6f61;">Your Name</span>
+  Hey there! I'm <span style="color:#ff6f61;">Ngangfibs</span>
   <img src="wave.gif" width="40px"/>
 </h1>
 
@@ -13,12 +13,12 @@
 ### 🎯 About Me
 
 ```yaml
-name: Your Name
-role: Full-Stack Developer
+name: Ngang Fibel 
+role: Full-Stack Developer, system architecture and workflow manager
 tech_stack:
-  - Python, TypeScript, JavaScript
+  - Python, TypeScript, JavaScript, rust
   - React, Node.js, Next.js
-  - PostgreSQL, MongoDB
+  - PostgreSQL, MongoDB, MySQL
 tools:
   - VS Code
   - Docker
@@ -40,9 +40,9 @@ fun_fact: >
 ### 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical&hide_border=true" width="47%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=your-username&theme=radical&hide_border=true" width="47%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=radical&hide_border=true" width="47%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ngangfibs&show_icons=true&theme=radical&hide_border=true" width="47%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ngangfibs&theme=radical&hide_border=true" width="47%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ngangfibs&layout=compact&theme=radical&hide_border=true" width="47%" />
 </div>
 
 ---
@@ -59,7 +59,7 @@ fun_fact: >
 
 ### 🌐 Connect with Me
 
-<p align="center">
+<p align="center" style="position: inline-flex; with: auto">
   <a href="https://linkedin.com/in/yourprofile"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://twitter.com/yourhandle"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white"/></a>
   <a href="mailto:youremail@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
@@ -77,8 +77,8 @@ fun_fact: >
 <details>
 <summary>👀 My Dev Setup</summary>
 
-- 💻 OS: Ubuntu / Windows 11  
-- 🔧 IDE: VS Code, PyCharm  
+- 💻 OS: Ubuntu / Windows 10  
+- 🔧 IDE: VS Code, PyCharm, cursor
 - 🔍 Extensions: GitLens, Prettier, Docker  
 - 🎵 Music: Synthwave, Lo-Fi, Techno  
 </details>
