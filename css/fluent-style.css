@@ -2,9 +2,9 @@
     --primary: #43c6ac;
     --secondary: #2d3a4b;
     --grey: rgba(40, 41, 50, 0.18);
-    --background: #f8ffae;
-    --white: #fff;
-    --glass: rgba(255,255,255,0.85);
+    --background: rgba(39, 7, 71, 0.7);;
+    --white: #ffffffe7;
+    --glass: rgba(255, 255, 255, 0.24);
     --shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
 }
 
@@ -16,31 +16,27 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: 'Roboto', 'Montserrat', Arial, sans-serif;
-    color: var(--secondary);
-    background: linear-gradient(120deg, var(--background) 0%, var(--primary) 100%);
+    color: var(--white);   
     overflow-x: hidden;
     position: relative;
     transition: background 0.8s cubic-bezier(.4,0,.2,1);
 }
 
-/* Cloudy animated background - dispersing and floating clouds */
 .cloud-bg {
     position: fixed;
-    top: 0; left: 0; width: 100vw; height: 100vh;
+    top: 0; left: 0; width: 100%; height: 100%;
     z-index: 0;
     pointer-events: none;
     overflow: hidden;
 }
 .cloud {
     position: absolute;
-    fill: #fff;
-    opacity: 0.5;
+    fill: rgba(255, 255, 255, 0.9); /* Increased opacity in fill */
+    opacity: 0.8; /* Increased base opacity */
     top: 0;
     left: 50%;
-    /* Start at center top */
     transform: translateX(-50%) scale(1);
     pointer-events: none;
-    /* Remove hover/transition, use animation instead */
 }
 
 /* Each cloud disperses and floats with its own animation */
@@ -100,7 +96,7 @@ body {
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    color: var(--secondary);
+    color: var(--white);
     margin: 0 0 1rem 0;
     transition: color 0.5s;
 }
@@ -125,7 +121,7 @@ h1 {
 }
 p, li, .about-text, .cv-list li, .sites-list li {
     font-size: clamp(1rem, 2.5vw, 1.15rem);
-    color: var(--secondary);
+    color: var(--white);
     font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.7;
     transition: color 0.5s;
@@ -134,6 +130,9 @@ a {
     color: var(--primary);
     text-decoration: none;
     transition: color 0.3s;
+}
+strong {
+    color: var(--white);
 }
 a:hover, a:focus {
     color: var(--secondary);
@@ -144,6 +143,7 @@ nav.nav {
     padding: 0.5rem 0;
     z-index: 2;
     position: relative;
+    box-shadow: 0 2px 8px rgba(67,198,172,0.10);
 }
 nav ul {
     list-style: none;
@@ -155,10 +155,10 @@ nav ul {
 }
 nav ul li a {
     text-decoration: none;
-    color: var(--background);
+    color: var(--white);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: clamp(0.75rem, 1.5vw, 0.86rem); /* reduced from 1rem/1.15rem */
+    font-size: clamp(0.80rem, 1.6vw, 1.01rem); /* reduced from 1rem/1.15rem */
     transition: color 0.3s;
 }
 nav ul li a.active, nav ul li a:hover {
@@ -197,7 +197,7 @@ nav ul li a.active, nav ul li a:hover {
     border-radius: 2em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border: none;
     cursor: pointer;
     background: var(--primary);
@@ -206,6 +206,7 @@ nav ul li a.active, nav ul li a:hover {
     transition: background 0.3s, color 0.3s;
     text-decoration: none;
     display: inline-block;
+    
 }
 .btn-outline {
     background: transparent;
@@ -256,44 +257,19 @@ nav ul li a.active, nav ul li a:hover {
     }
 }
 
-/* Home page: white text and dark purple background */
-body.home-page {
-    background: linear-gradient(120deg, #2d174d 0%, #3a206e 100%);
-}
-body.home-page .home,
-body.home-page .homee,
-body.home-page .home-content,
-body.home-page .glass-card,
-body.home-page .home-icons a,
-body.home-page .btn,
-body.home-page .btn-outline,
-body.home-page .subtitle,
-body.home-page h1,
-body.home-page h2,
-body.home-page h3,
-body.home-page p,
-body.home-page .highlight {
-    color: #fff !important;
-    background: transparent;
-}
-body.home-page .glass-card {
-    background: rgba(60, 30, 90, 0.7);
-}
 body.home-page .btn,
 body.home-page .btn-outline {
     border-color: #fff;
-    color: #fff;
+    color: #23a0ac;
     background: rgba(67,198,172,0.15);
 }
 body.home-page .btn:hover,
 body.home-page .btn-outline:hover {
-    background: #fff;
+    background: #046a8c;
     color: #3a206e;
     border-color: #fff;
 }
-body.home-page .home-icons a {
-    color: #fff;
-}
+
 body.home-page .home-icons a:hover {
     color: var(--primary);
 }

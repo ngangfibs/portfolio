@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <canvas class="particle-canvas"></canvas>
     <div class="cloud-bg" aria-hidden="true">
         <svg class="cloud c1" viewBox="0 0 200 60"><ellipse cx="60" cy="30" rx="60" ry="30"/><ellipse cx="140" cy="30" rx="40" ry="20"/></svg>
         <svg class="cloud c2" viewBox="0 0 120 40"><ellipse cx="40" cy="20" rx="40" ry="20"/><ellipse cx="90" cy="20" rx="30" ry="15"/></svg>
@@ -27,7 +28,11 @@
             <li class="hide"><a href="MY.html">My CV</a></li>
         </ul>
         <ul>
-            <li><a href="fibel">FIBEL</a></li>
+            <li>
+                <a href="fibel">
+                    <img src="fibelLogo.jpg" alt="NF Logo" style="height:32px;vertical-align:middle;margin-right:8px;border-radius:8px;">
+                </a>
+            </li>
             <li class="hide"><a href="index.html">Home</a></li>
             <li class="hide"><a href="sites.html" class="active">Sites</a></li>
             <li class="hide"><a href="About.html">About me</a></li>
@@ -59,5 +64,6 @@
         </div>
     </section>
     <script src="script.js"></script>
+     <script src="js/particle.js"></script>
 </body>
 </html>

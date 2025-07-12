@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <canvas class="particle-canvas"></canvas>
     <!-- Cloudy animated SVG background -->
     <div class="cloud-bg" aria-hidden="true">
         <svg class="cloud c1" viewBox="0 0 200 60"><ellipse cx="60" cy="30" rx="60" ry="30"/><ellipse cx="140" cy="30" rx="40" ry="20"/></svg>
@@ -28,7 +29,11 @@
             <li class="hide"><a href="MY.html">My CV</a></li>
         </ul>
         <ul>
-            <li><a href="fibel">FIBEL</a></li>
+            <li>
+                <a href="fibel">
+                    <img src="fibelLogo.jpg" alt="NF Logo" style="height:32px;vertical-align:middle;margin-right:8px;border-radius:8px;">
+                </a>
+            </li>
             <li class="hide"><a href="index.html">Home</a></li>
             <li class="hide"><a href="sites.html">Sites</a></li>
             <li class="hide"><a href="About.html" class="active">About me</a></li>
@@ -45,13 +50,15 @@
                 When I'm not coding, you'll find me exploring new tech, collaborating on open-source, or designing intuitive user experiences.<br><br>
                 <em>Let's connect and create something impactful together!</em>
             </div>
-            <div class="about-icons">
-                 <a href="https://instagram.com/ngang_fibs" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+             
+        </div>
+        <div class="home-icons animated-fadein-delay new">
+                <a href="https://instagram.com/ngang_fibs" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://x.com/NGANGFIBEL" aria-label="Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://t.me/Ngangfibs" aria-label="Telegram" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-            </div> 
-        </div>
+            </div>
     </section>
     <script src="script.js"></script>
+       <script src="js/particle.js"></script>
 </body>
 </html>
